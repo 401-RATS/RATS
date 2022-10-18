@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/401-RATS/RATS/issues"
   },
-  "homepage": "https://github.com/401-RATS/RATS#readme"
+  "homepage": "https://github.com/401-RATS/RATS#readme",
+  "dependencies": {
+    "aws-sdk": "^2.1234.0",
+    "chance": "^1.1.9",
+    "sqs-consumer": "^5.7.0",
+    "sqs-producer": "^2.1.0"
+  }
 }
