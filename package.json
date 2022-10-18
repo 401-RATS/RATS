@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/401-RATS/RATS/issues"
   },
-  "homepage": "https://github.com/401-RATS/RATS#readme"
+  "homepage": "https://github.com/401-RATS/RATS#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "ngrok": "^4.3.3",
+    "twilio": "^3.82.2"
+  }
 }
