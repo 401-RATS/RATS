@@ -50,12 +50,12 @@ and
 
 ```./driver```
 
-- Use the command node vendor.js while inside of the ./vendor directory to create an order and send a payload to the driverSNS topic.
+- Use the command node dispatch.js while inside of the ./dispatch directory to create an emergency message and send a payload to the first responder topic.
 
-- Use the command node driver.js while inside of the ./driver directory to consume SQS messages as they are sent to the SQS.
+- Use the command node first.responder.js while inside of the ./first-responder directory to consume SQS messages as they are sent to the SQS.
 
-As an order is received by the vendor, the driver will acknowledge that an order has been picked up. The Driver will then send a message when the order has been delivered. The driver will produce a message to the SQS with delivery confirmation. The vendor will then consume the delivery confirmation and report the order id that has been delivered.
+As an rescue request is received by dispatch, the first responder team will acknowledge that the imperilled has been picked up. The first responders will then send a message when the rescue has been completed. The first responder will produce a message to the SQS with delivery confirmation. Dispatch will then consume the delivery confirmation and report the patient id that has been delivered.
 
-A 20 second interval between new orders has been set for the vendor and a 10 second interval between consuming SQS messages has been set for the driver to accommodate potential delays in SNS publishing and SQS consuming.
+A 20 second interval between new rescue requests has been set for the dispatch center and a 10 second interval between consuming SQS messages has been set for the first responders to accommodate potential delays in SNS publishing and SQS consuming.
 
 ![Domain Model, Wire frame and Schemas](./assets/RATS-Project-Prep-4.png)
