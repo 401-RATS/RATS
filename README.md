@@ -2,7 +2,7 @@
 
 ## Links and Resources
 
-[Software Requirement](https://docs.google.com/document/d/1cHOilueQXYlvPstEeojwL--eA107kw1CbXhWKxxdcxE/edit?usp=sharing)
+[Software Requirements](https://docs.google.com/document/d/1cHOilueQXYlvPstEeojwL--eA107kw1CbXhWKxxdcxE/edit?usp=sharing)
 
 [User Stories](https://docs.google.com/document/d/1X0NDqdkVc_YO6PaRRn52b1z8fr0FGywHuXuEbsS6ZJ8/edit?usp=sharing)
 
@@ -44,11 +44,11 @@ npm init -y
 
 When a local repo is established and all dependencies are installed, open two terminal instances and navigate to
 
-```./vendor```
+```./dispatch```
 
 and
 
-```./driver```
+```./first-responders```
 
 - Use the command node dispatch.js while inside of the ./dispatch directory to create an emergency message and send a payload to the first responder topic.
 
