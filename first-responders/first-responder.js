@@ -9,7 +9,7 @@ const app = Consumer.create({
   queueUrl: 'https://sqs.us-east-2.amazonaws.com/112727125534/responders',
   handleMessage: async (message) => {
     const distressCall = JSON.parse(JSON.parse(message.Body).Message);
-    console.log('\nImperiled in possession of rescue team: \n', distressCall);
+    console.log('\nRescue mission received, mission in progress: \n', distressCall);
     setTimeout(async () => {
       const producer = Producer.create({
         queueUrl: 'https://sqs.us-east-2.amazonaws.com/112727125534/responders',

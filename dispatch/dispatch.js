@@ -26,10 +26,12 @@ setInterval(() => {
   };
   sns.publish(payload).promise().then(result => {
     console.log('\nDistress signal received \n ----->', payload.Message),
-    console.log('\nRescue mission approved \n ----->', distressCall);
+    console.log('\nRescue mission approval sent to first responders: \n ----->', distressCall);
   })
     .catch(err => console.error(err.message));
 }, 20000);
+
+
 
 const app = Consumer.create({
   queueUrl: 'https://sqs.us-east-2.amazonaws.com/112727125534/responders',
